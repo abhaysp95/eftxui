@@ -1,0 +1,3 @@
+[submodule "ftxui"]
+	path = ftxui
+	url = https://github.com/coolabhays/ftxui.git
