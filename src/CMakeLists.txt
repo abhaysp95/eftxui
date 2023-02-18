@@ -20,6 +20,9 @@ example(screen_basic)
 example(dom_basic)
 example(paragraph_basic)
 example(graph_basic)
+example(color_info_palette256)
+example(color_truecolor_hsv)
+example(color_truecolor_rgb)
 
 # add_executable(${TARGET} starter.cpp)
 
