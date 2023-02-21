@@ -17,7 +17,8 @@ int main(void) {
            size(WIDTH, EQUAL, dimx) | size(HEIGHT, EQUAL, dimy);
   };
 
-  auto style = size(WIDTH, GREATER_THAN, 20) | border | size(HEIGHT, GREATER_THAN, 20) | size(WIDTH, LESS_THAN, 50);
+  auto style = size(WIDTH, GREATER_THAN, 20) | border |
+               size(HEIGHT, GREATER_THAN, 20) | size(WIDTH, LESS_THAN, 50);
 
   auto document = hflow({
                       make_box(7, 7),
@@ -38,7 +39,8 @@ int main(void) {
                       make_box(13, 3),
                       make_box(13, 3),
                       make_box(10, 3),
-		  }) | style;
+                  }) |
+                  style;
 
   auto screen = Screen::Create(Dimension::Full(), Dimension::Fit(document));
   Render(screen, document);
