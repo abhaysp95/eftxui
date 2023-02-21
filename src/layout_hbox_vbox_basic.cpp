@@ -5,33 +5,33 @@
 #include <ftxui/screen/screen.hpp>
 
 int main(void) {
-	using namespace ftxui;
+  using namespace ftxui;
 
-	auto document = vbox({
-			hbox({
-					text("north-west"),
-					filler(),
-					text("north-east"),
-					}),
-			filler(),
-			hbox({
-					filler(),
-					text("center"),
-					filler(),
-					}),
-			filler(),
-			hbox({
-					text("south-west"),
-					filler(),
-					text("south-east"),
-					}),
-			});
+  auto document = vbox({
+      hbox({
+          text("north-west"),
+          filler(),
+          text("north-east"),
+      }),
+      filler(),
+      hbox({
+          filler(),
+          text("center"),
+          filler(),
+      }),
+      filler(),
+      hbox({
+          text("south-west"),
+          filler(),
+          text("south-east"),
+      }),
+  });
 
-	auto screen = Screen::Create(Dimension::Full());
-	Render(screen, document);
-	screen.Print();
+  auto screen = Screen::Create(Dimension::Full());
+  Render(screen, document);
+  screen.Print();
 
-	getchar();
+  getchar();
 
-	return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
