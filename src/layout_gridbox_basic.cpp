@@ -19,6 +19,7 @@ int main(void) {
           cell("north-east"),
       }, // one row completed for grid
       {
+          // cell("center-west") | vcenter,  // hcenter and vcenter work
           cell_center("center-west"),
           gridbox({{
                        cell("center-north-west"),
