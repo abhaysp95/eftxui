@@ -24,7 +24,7 @@ example(color_info_palette256)
 example(color_truecolor_hsv)
 example(color_truecolor_rgb)
 example(color_gallery_basic)
-example(layout_basic)
+example(layout_hbox_vbox_basic)
 
 # add_executable(${TARGET} starter.cpp)
 
