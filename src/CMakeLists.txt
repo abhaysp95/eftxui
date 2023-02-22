@@ -28,6 +28,7 @@ example(layout_hbox_vbox_basic)
 example(layout_gridbox_basic)
 example(layout_flexbox_basic)
 example(table_basic)
+example(simple_canvas)
 
 # add_executable(${TARGET} starter.cpp)
 
